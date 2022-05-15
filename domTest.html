@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Изучаем DOM</title>
+</head>
+<body>
+    <h1 id='main-heading'>Привет, мир!</h1>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script>
+   let myFriends = ['Саня','Жора','Яна','Алена'];
+   for(i = 0; i < myFriends.length; i++) {
+       $('body').append('<p>' + myFriends[i] + '</p>');
+       $('p').last().hide().delay((i + 1) * 3000).fadeIn(2000);
+   }
+   $('p').append(' лучший!');
+   </script>
+   <script>
+    //    let fadeTime;
+    //    for(i = 0; i < 5; i++) {
+    //        fadeTime = (i + 1) * 1000;
+    //        $('#main-heading').fadeIn(fadeTime / 2).fadeOut(fadeTime / 2);
+    //    }
+       $("h1").fadeTo(5000, 0.3);
+   </script>
+</body>
+</html>
