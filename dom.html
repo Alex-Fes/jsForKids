@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Изучаем DOM</title>
+</head>
+<body>
+    <h1 id='main-heading'>Привет, мир!</h1>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script>
+    let newHeadingText = prompt('Введите новый заголовок');
+   $('#main-heading').text(newHeadingText);
+   $("h1").slideUp(3000).slideDown(3000);
+   $('body').append('<p>Это новый параграф</p>');
+//    for (i = 0; i < 3; i++) {
+//        let hobby = prompt('Назовите одно из своих хобби');
+//        $('body').append('<p>' + hobby + '</p>');
+//    }
+$('p').fadeOut(3000);
+$('p').fadeIn(3000);
+   </script>
+</body>
+</html>
